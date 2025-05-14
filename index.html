@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title and Description -->
+    <title>Student Says - Honest Reviews & Ratings of Schools</title>
+    <meta name="description" content="Student Says is a platform where students can rate, review, and discuss their schools anonymously. Share experiences, read honest feedback, and help others make informed decisions.">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Student Reviews, School Ratings, School Feedback, Anonymous School Reviews, Education Reviews, Rate Schools">
+    <meta name="author" content="Student Says Team">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Student Says - Honest Reviews & Ratings of Schools" />
+    <meta property="og:description" content="Student Says is a platform where students can rate, review, and discuss their schools anonymously." />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:url" content="https://studentsays.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Student Says - Honest Reviews & Ratings of Schools" />
+    <meta name="twitter:description" content="Rate and review your school anonymously. Read honest feedback from students across India." />
+    <meta name="twitter:image" content="/logo.png" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- Main JS -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- OneSignal Push Notifications -->
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
+          appId: "c316b9b6-df92-4095-84ba-54c1029071dc",
+          safari_web_id: "web.onesignal.auto.4d0b3421-6847-4c4b-a531-b4bcf634e4d8",
+          notifyButton: {
+            enable: true,
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
